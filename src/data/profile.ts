@@ -22,7 +22,22 @@ export type Hackathon = {
   href?: string;
 };
 
-export const profile = {
+export type Profile = {
+  name: string;
+  title: string;
+  intro: string;
+  location: string;
+  links: Array<{
+    label: string;
+    href: string;
+  }>;
+  skills: Record<string, string[]>;
+  experience: Experience[];
+  projects: Project[];
+  hackathons: Hackathon[];
+};
+
+export const profile: Profile = {
   name: "Your Name",
   title: "Software Developer",
   intro:
@@ -60,7 +75,7 @@ export const profile = {
         "Partnered with design and product teams to refine user experiences."
       ]
     }
-  ] satisfies Experience[],
+  ],
   projects: [
     {
       name: "Featured Product Website",
@@ -89,7 +104,7 @@ export const profile = {
       ],
       tags: ["Python", "Automation", "CLI"]
     }
-  ] satisfies Project[],
+  ],
   hackathons: [
     {
       name: "AI Product Hackathon",
@@ -109,5 +124,5 @@ export const profile = {
       ],
       tags: ["TypeScript", "APIs", "UX"]
     }
-  ] satisfies Hackathon[]
+  ]
 };
