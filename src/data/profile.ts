@@ -38,91 +38,107 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "Your Name",
-  title: "Software Developer",
+  name: "Pravin Senkottiayan Baskaran",
+  title: "Data Engineer",
   intro:
-    "I build thoughtful, accessible web products with a focus on clean interfaces, reliable systems, and practical user outcomes.",
-  location: "Your City, Your Region",
+    "I build reliable data pipelines, analytics workflows, and database-backed solutions that turn raw information into useful business insights.",
+  location: "San Francisco Bay Area, California",
   links: [
-    { label: "GitHub", href: "https://github.com/your-username" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/your-username" },
+    { label: "GitHub", href: "https://github.com/sbpravin1996" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/your-linkedin" },
     { label: "Email", href: "mailto:you@example.com" }
   ],
   skills: {
-    Frontend: ["Next.js", "React", "TypeScript", "JavaScript", "HTML", "CSS"],
-    Backend: ["Node.js", "Python", "PostgreSQL", "REST APIs"],
-    Tools: ["Git", "GitHub Actions", "Vercel", "Figma", "Agile"],
+    "Programming & Scripting": ["Python", "SQL", "JavaScript", "Bash"],
+    "Databases & Warehousing": [
+      "PostgreSQL",
+      "MySQL",
+      "SQL Server",
+      "Data Modeling",
+      "ETL",
+      "Data Warehousing"
+    ],
+    "Data Analytics & BI": [
+      "Data Analysis",
+      "Power BI",
+      "Tableau",
+      "Excel",
+      "Reporting",
+      "Dashboarding"
+    ],
+    "Machine Learning": ["scikit-learn", "Pandas", "NumPy", "Feature Engineering"],
+    "Cloud & Tools": ["Git", "GitHub", "Docker", "Airflow", "AWS", "Vercel"],
     "AI Tools": ["Cursor", "Claude", "OpenAI", "Automation"]
   },
   experience: [
     {
-      company: "Current Company",
-      role: "Software Engineer",
-      period: "2025 - Present",
+      company: "Portfolio Focus",
+      role: "Data Engineering",
+      period: "Current",
       highlights: [
-        "Build and maintain user-facing product features across the stack.",
-        "Collaborate with stakeholders to turn ambiguous requirements into shipped work.",
-        "Improve reliability, accessibility, and maintainability across key workflows."
+        "Design data workflows that move, clean, transform, and organize information for analysis.",
+        "Use Python and SQL to prepare reliable datasets for reporting, dashboards, and decision-making.",
+        "Focus on database design, ETL concepts, analytics engineering, and practical business insight."
       ]
     },
     {
-      company: "Previous Company",
-      role: "Web Developer",
-      period: "2022 - 2025",
+      company: "Analytics Practice",
+      role: "Data Analyst Skills",
+      period: "Ongoing",
       highlights: [
-        "Led feature development from planning through release.",
-        "Reduced recurring issues by improving tests, monitoring, and code quality.",
-        "Partnered with design and product teams to refine user experiences."
+        "Analyze datasets with SQL, Python, Pandas, and visualization tools.",
+        "Build reports and dashboards with Power BI, Tableau, and spreadsheet workflows.",
+        "Apply statistics and machine learning fundamentals using scikit-learn for exploratory projects."
       ]
     }
   ],
   projects: [
     {
-      name: "Featured Product Website",
-      period: "2025 - 2026",
+      name: "PostgreSQL Data Pipeline",
+      period: "Portfolio Project",
       description: [
-        "Designed and developed a modern, responsive website for a community or business.",
-        "Gathered requirements, iterated on content, and shipped a polished public presence."
+        "Built a Python ETL workflow that extracts raw data, cleans inconsistent fields, and loads structured tables into PostgreSQL.",
+        "Designed relational tables and SQL queries for repeatable reporting and downstream analysis."
       ],
-      tags: ["Next.js", "TypeScript", "CSS"]
+      tags: ["Python", "PostgreSQL", "ETL", "SQL"]
     },
     {
-      name: "Data Dashboard",
-      period: "2024 - 2025",
+      name: "Business Intelligence Dashboard",
+      period: "Portfolio Project",
       description: [
-        "Built an interactive dashboard that turns complex data into clear visual insights.",
-        "Structured reusable components and data utilities for maintainable growth."
+        "Created an analytics dashboard to track key metrics, trends, and category-level performance.",
+        "Prepared clean datasets and translated analysis into visuals that are easy for stakeholders to understand."
       ],
-      tags: ["React", "Charts", "APIs"]
+      tags: ["Power BI", "Tableau", "SQL", "Data Analysis"]
     },
     {
-      name: "Automation Tool",
-      period: "2024",
+      name: "Machine Learning Analysis",
+      period: "Portfolio Project",
       description: [
-        "Created a utility that removes manual work from a repetitive research or operations process.",
-        "Improved turnaround time while keeping outputs easy to review and share."
+        "Explored a dataset with Pandas and NumPy, engineered useful features, and trained baseline models with scikit-learn.",
+        "Compared model performance and documented insights from the analysis."
       ],
-      tags: ["Python", "Automation", "CLI"]
+      tags: ["Python", "Pandas", "NumPy", "scikit-learn"]
     }
   ],
   hackathons: [
     {
-      name: "AI Product Hackathon",
-      date: "March 2026",
+      name: "Data Engineering Preparation",
+      date: "Learning Track",
       description: [
-        "Created a prototype that combines AI workflows with a focused user experience.",
-        "Built the core product flow, presentation, and demo in a short timeframe."
+        "Practicing SQL, Python data processing, ETL patterns, and database design through portfolio projects.",
+        "Building a foundation for production-style data workflows and analytics engineering."
       ],
-      result: "Finalist",
-      tags: ["AI", "Next.js", "Automation"]
+      result: "In Progress",
+      tags: ["SQL", "Python", "ETL", "PostgreSQL"]
     },
     {
-      name: "Developer Tools Sprint",
-      date: "November 2025",
+      name: "Analytics & Visualization",
+      date: "Learning Track",
       description: [
-        "Built a practical tool for improving developer productivity and workflow clarity."
+        "Developing dashboarding and reporting skills with Power BI, Tableau, Excel, and SQL-based analysis."
       ],
-      tags: ["TypeScript", "APIs", "UX"]
+      tags: ["Power BI", "Tableau", "Excel", "Reporting"]
     }
   ]
 };

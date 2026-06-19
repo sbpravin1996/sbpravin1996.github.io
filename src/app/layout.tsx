@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Name | Software Developer",
+  title: "Pravin Senkottiayan Baskaran | Data Engineer",
   description:
-    "A personal portfolio for a software developer focused on accessible, polished web products."
+    "A personal portfolio for a data engineer focused on Python, SQL, analytics, and reliable data workflows."
 };
 
 export default function RootLayout({

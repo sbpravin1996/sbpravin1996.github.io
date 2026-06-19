@@ -1,6 +1,10 @@
 import { profile } from "@/data/profile";
 
-const navItems = ["Experience", "Projects", "Hackathons"];
+const navItems = [
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Learning", href: "#learning" }
+];
 
 export default function Home() {
   return (
@@ -12,8 +16,8 @@ export default function Home() {
           </a>
           <div className="nav-links">
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`}>
-                {item}
+              <a key={item.href} href={item.href}>
+                {item.label}
               </a>
             ))}
           </div>
@@ -37,7 +41,7 @@ export default function Home() {
       <section className="section" aria-labelledby="about-heading">
         <div className="section-heading">
           <p className="eyebrow">About Me</p>
-          <h2 id="about-heading">Technical Skills</h2>
+          <h2 id="about-heading">Data Skills</h2>
         </div>
         <div className="skills-grid">
           {Object.entries(profile.skills).map(([category, skills]) => (
@@ -55,8 +59,8 @@ export default function Home() {
 
       <section id="experience" className="section" aria-labelledby="experience-heading">
         <div className="section-heading">
-          <p className="eyebrow">Work</p>
-          <h2 id="experience-heading">Experience</h2>
+          <p className="eyebrow">Direction</p>
+          <h2 id="experience-heading">Experience Focus</h2>
         </div>
         <div className="timeline">
           {profile.experience.map((job) => (
@@ -106,10 +110,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="hackathons" className="section" aria-labelledby="hackathons-heading">
+      <section id="learning" className="section" aria-labelledby="learning-heading">
         <div className="section-heading">
-          <p className="eyebrow">Fast Builds</p>
-          <h2 id="hackathons-heading">Hackathons</h2>
+          <p className="eyebrow">Growth</p>
+          <h2 id="learning-heading">Learning & Certifications</h2>
         </div>
         <div className="card-grid">
           {profile.hackathons.map((hackathon) => (
@@ -141,7 +145,7 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-        <p>Built with Next.js. Update your details in src/data/profile.ts.</p>
+        <p>Data engineering portfolio built with Next.js.</p>
         <a href="#top">Back to top</a>
       </footer>
     </main>
