@@ -1,3 +1,6 @@
+// Edit this file to update the portfolio content.
+// The page layout reads from these objects, so you usually do not need to edit app/page.tsx.
+
 export type Experience = {
   company: string;
   role: string;
@@ -45,8 +48,8 @@ export const profile: Profile = {
   location: "San Francisco Bay Area, California",
   links: [
     { label: "GitHub", href: "https://github.com/sbpravin1996" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/your-linkedin" },
-    { label: "Email", href: "mailto:you@example.com" }
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/pravinsb/" },
+    { label: "Email", href: "mailto:sbpravin1996@gmail.com" }
   ],
   skills: {
     "Programming & Scripting": ["Python", "SQL", "JavaScript", "Bash"],
@@ -70,6 +73,7 @@ export const profile: Profile = {
     "Cloud & Tools": ["Git", "GitHub", "Docker", "Airflow", "AWS", "Vercel"],
     "AI Tools": ["Cursor", "Claude", "OpenAI", "Automation"]
   },
+  // Add, remove, or reorder cards here to edit the Experience Focus section.
   experience: [
     {
       company: "Portfolio Focus",
@@ -92,6 +96,7 @@ export const profile: Profile = {
       ]
     }
   ],
+  // Add, remove, or reorder cards here to edit the Projects section.
   projects: [
     {
       name: "PostgreSQL Data Pipeline",
@@ -121,6 +126,7 @@ export const profile: Profile = {
       tags: ["Python", "Pandas", "NumPy", "scikit-learn"]
     }
   ],
+  // Add, remove, or reorder cards here to edit the Learning & Certifications section.
   hackathons: [
     {
       name: "Data Engineering Preparation",
